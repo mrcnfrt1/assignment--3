@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techniques of Painting</title>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <section class="gallery-hero">
+        <header class="gallery-header">
+            <h1>TECHNIQUES OF PAINTING</h1>
+            <p>Light, space, brushwork, and form shaped across centuries of visual art.</p>
+        </header>
+
+        <div class="gallery-stage">
+           
+            <div class="center-oval">
+                <img src="images/center.jpg" alt="Central museum portrait" />
+            </div>
+
+         
+            <a class="oval-frame frame-1" href="https://smarthistory.org/technique/chiaroscuro/" target="_blank"
+                rel="noopener noreferrer" data-key="chiaroscuro">
+                <img src="images/chiaroscuro.jpg" alt="" />
+                <p class="frame-title">Chiaroscuro</p>
+            </a>
+
+            <a class="oval-frame frame-2" href="https://smarthistory.org/technique/fresco/" target="_blank"
+                rel="noopener noreferrer" data-key="fresco">
+                <img src="images/fresco.jpg" alt="" />
+                <p class="frame-title">Fresco</p>
+            </a>
+
+            <a class="oval-frame frame-3" href="https://smarthistory.org/technique/tenebrism/" target="_blank"
+                rel="noopener noreferrer" data-key="tenebrism">
+                <img src="images/tenebrism.jpg" alt="" />
+                <p class="frame-title">Tenebrism</p>
+            </a>
+
+            <a class="oval-frame frame-4" href="https://smarthistory.org/technique/linear-perspective/" target="_blank"
+                rel="noopener noreferrer" data-key="linear-perspective">
+                <img src="images/linear-perspective.jpg" alt="" />
+                <p class="frame-title">Linear Perspective</p>
+            </a>
+
+            <a class="oval-frame frame-5" href="https://smarthistory.org/technique/impasto/" target="_blank"
+                rel="noopener noreferrer" data-key="impasto">
+                <img src="images/impasto.jpg" alt="" />
+                <p class="frame-title">Impasto</p>
+            </a>
+
+            <a class="oval-frame frame-6" href="https://smarthistory.org/technique/contrapposto/" target="_blank"
+                rel="noopener noreferrer" data-key="contrapposto">
+                <img src="images/contrapposto.jpg" alt="" />
+                <p class="frame-title">Contrapposto</p>
+            </a>
+
+            <a class="oval-frame frame-7" href="https://smarthistory.org/technique/ink-wash/" target="_blank"
+                rel="noopener noreferrer" data-key="ink-wash">
+                <img src="images/ink-wash.jpg" alt="" />
+                <p class="frame-title">Ink Wash</p>
+            </a>
+
+            <a class="oval-frame frame-8" href="https://smarthistory.org/technique/haboku/" target="_blank"
+                rel="noopener noreferrer" data-key="haboku">
+                <img src="images/haboku.jpg" alt="" />
+                <p class="frame-title">Haboku</p>
+            </a>
+        </div>
+
+     
+        <div id="center-popup" class="center-popup" aria-hidden="true">
+            <div class="popup-card">
+                <img id="popup-img" src="" alt="" />
+                <div class="popup-body">
+                    <h2 id="popup-title"></h2>
+                    <p id="popup-text"></p>
+                    <p class="popup-link-hint">Click frame to open Smarthistory</p>
+                </div>
+            </div>
+        </div>
+
+        <a class="scroll-note" href="#design-rationale">Design Rationale</a>
+    </section>
+
+    
+    <section id="design-rationale" class="rationale-section">
+        <div class="rationale-card">
+            <h2>Design Rationale</h2>
+            <p>
+                For this proof-of-concept, I wanted to make a calm, museum-style layout with a central portrait
+                surrounded by eight painting techniques that link to Smarthistory. I came across Tippy.js while checking
+                bias.wiki and decided to use it for the small hover/focus hint because it feels clean and easy to set
+                up, working together with the center preview card.
+            </p>
+            <p>
+                If I take this further later, I could add ways to filter by art period or region, include a few artist
+                examples, or add short notes to make exploring each technique even more helpful.
+            </p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
