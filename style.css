@@ -71,6 +71,7 @@ body {
     border: 12px solid #deb24c;
     box-shadow: 0 0 0 4px #634212, 0 22px 48px rgba(0, 0, 0, 0.78);
     background-color: #261b12;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
 .center-oval img {
@@ -96,15 +97,22 @@ body {
     z-index: 6;
 }
 
-.oval-frame img {
+.oval-media {
     width: 142px;
     height: 198px;
     border-radius: 50%;
-    object-fit: cover;
-    display: block;
+    overflow: hidden;
     border: 8px solid #deb24c;
     box-shadow: 0 0 0 3px #634212, 0 14px 28px rgba(0, 0, 0, 0.72);
     background-color: #261b12;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+}
+
+.oval-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .frame-title {
